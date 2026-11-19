@@ -122,3 +122,14 @@ footer p {
   color: var(--muted);
   font-size: 12px;
 }
+
+a.links, a.links:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+div.desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
