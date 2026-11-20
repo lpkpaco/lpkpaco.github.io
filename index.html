@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage: lpkpaco</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <header>
@@ -40,18 +41,24 @@
             <div class = "grids">
                 <section class = "card">
                     <h3>gadget32</h3>
-                    <p>Dithering and PSRAM allocation on a custom ESP32 board locally, applied to use with E6 e-paper displays.</p>
+                <p>Dithering and PSRAM allocation on a custom ESP32 board locally, applied to use with E6 e-paper displays.</p>
                     <div class = "desc">
                         <a href = "https://github.com/lpkpaco/gadget32" target = "_blank" class = "links">
                             <img src="asset/icon/GitHub_Invertocat_White.svg" width="16" height="16">
                             View on GitHub
                         </a>
                         <div class = "preview">
-                            <a href="links" class="links">
+                            <a class="links" id = "gadget32-preview">
                                 Quick Preview ►
                             </a>
                         </div>
                     </div>
+                    <div id = "gadget32-preview-content" class = "gadget32-preview-content" hidden>
+                        <p class="inline">This project is a custom ESP32 board with dithering and PSRAM allocation, designed for use with E6 e-paper displays, utilizing the PSRAM on S3 models for local dithering instead of relying on uploading images via PC and flashing new ImageData.h whenever the user wants to update the display.</p>
+                        <img src="asset/img/gadget32-preview.png">
+                        <img src="asset/img/SCH_gadget32-v1_0.svg">
+                    </div>
+                    <script src = "preview.js"></script>
                 </section>
                 <section class = "card">
                     <h3>Bocchi-The-Rock-GPT-SoVITS-Models</h3>
