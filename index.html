@@ -6,6 +6,7 @@
     <title>Homepage: lpkpaco</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <noscript><p>JavaScript is not supported in your browser.</p></noscript>
 </head>
 <body>
     <header>
@@ -66,6 +67,91 @@
                 </section>
             </section>
         </section>
+
+        <section id = "collections" class = "section reveal">
+            <h2>Collections</h2>
+            <section class = "grids">
+                <button type="button" class="button" data-collection="plushies">Plushies</button>
+                <button type="button" class="buttonnotselected" data-collection="nendoroids">Nendoroids</button>
+                <button type="button" class="buttonnotselected" data-collection="figures">Figures</button>
+                <button type="button" class="buttonnotselected" data-collection="acrylicstands">Acrylic Stands</button>
+            </section>
+            <p class = "inline">Click on cards to flip</p>
+            <section id = "plushies" class = "grids collection-panel">
+                <section class = "card-deck">
+                    <section class = "card" id = "nina">
+                        <img src="asset/img/plushies/nina.jpg" alt="nina" class="collection-img">
+                        <h3>Nina</h3>
+                        <p>Since 18-7-2026</p>
+                    </section>
+                    <section class = "card" id = "subaru">
+                        <img src="asset/img/plushies/subaru.jpg" alt="subaru" class="collection-img">
+                        <h3>Subaru</h3>
+                        <p>Since 10-10-2026</p>
+                    </section>
+                    <section class = "card" id = "raana">
+                        <img src="asset/img/plushies/raana.jpg" alt="raana" class="collection-img">
+                        <h3>Raana</h3>
+                        <p>Since 12-5-2026</p>
+                    </section>
+                    <section class = "card" id = "sakiko">
+                        <img src="asset/img/plushies/sakiko.jpg" alt="sakiko" class="collection-img">
+                        <h3>Sakiko</h3>
+                        <p>Since 13-5-2026</p>
+                    </section>
+                    <section class = "card" id = "mana">
+                        <img src="asset/img/plushies/mana.jpg" alt="mana" class="collection-img">
+                        <h3>Mana</h3>
+                        <p>Since 9-5-2026</p>
+                    </section>
+                    <section class = "card" id = "uika">
+                        <img src="asset/img/plushies/uika.jpg" alt="uika" class="collection-img">
+                        <h3>Uika</h3>
+                        <p>Since 9-5-2026</p>
+                    </section>
+                    <section class = "card" id = "mutsumi">
+                        <img src="asset/img/plushies/mutsumi.jpg" alt="mutsumi" class="collection-img">
+                        <h3>Mutsumi</h3>
+                        <p>Since 13-5-2026</p>
+                    </section>
+                    <section class = "card" id = "mortis">
+                        <img src="asset/img/plushies/mortis.jpg" alt="mortis" class="collection-img">
+                        <h3>Mortis</h3>
+                        <p>Since 25-7-2025</p>
+                    </section>
+                    <section class = "card" id = "kita">
+                        <img src="asset/img/plushies/kita.jpg" alt="kita" class="collection-img">
+                        <h3>Kita</h3>
+                        <p>Since 27-8-2026</p>
+                    </section>
+                    <section class = "card" id = "hitori">
+                        <img src="asset/img/plushies/hitori.jpg" alt="hitori" class="collection-img">
+                        <h3>Hitori</h3>
+                        <p>Since 27-8-2026</p>
+                    </section>
+                    <section class = "card" id = "hitorimango">
+                        <img src="asset/img/plushies/hitorimango.jpg" alt="hitorimango" class="collection-img">
+                        <h3>Hitori in Mango Box</h3>
+                        <p>Sorry too old I can't even track I feel bad for her</p>
+                    </section>
+                    <section class = "card" id = "tomori">
+                        <img src="asset/img/plushies/tomori.jpg" alt="tomori" class="collection-img">
+                        <h3>Tomori</h3>
+                        <p>Since 18-7-2025</p>
+                    </section>
+                </section>
+            </section>
+            <section id = "acrylicstands" class = "grids collection-panel" hidden>
+                <section class = "card-deck">
+                    <section class = "card" id = "winterraana">
+                        <img src="asset/img/acrylicstands/winterraana.jpg" alt="winterraana" class="collection-img">
+                        <h3>Raana Winter Outfit</h3>
+                        <p>Since 27-9-2026</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
         <section id = "projects" class = "section reveal">
             <h2>Projects</h2>
             <div class = "grids">
@@ -85,8 +171,8 @@
                     </div>
                     <div id = "gadget32-preview-content" class = "gadget32-preview-content" hidden>
                         <p class="inline">This project is a custom ESP32 board with dithering and PSRAM allocation, designed for use with E6 e-paper displays, utilizing the PSRAM on S3 models for local dithering instead of relying on uploading images via PC and flashing new ImageData.h whenever the user wants to update the display.</p>
-                        <img src="asset/img/gadget32-preview.svg" class="quickpreview">
-                        <img src="asset/img/SCH_gadget32-v1_0.svg" class="quickpreview">
+                        <img src="asset/img/gadget32/gadget32-preview.svg" class="quickpreview">
+                        <img src="asset/img/gadget32/SCH_gadget32-v1_0.svg" class="quickpreview">
                     </div>
                     <script src = "preview.js"></script>
                 </section>
@@ -125,4 +211,5 @@
         </footer>
     </main>
     <script src="reveal.js"></script>
+    <script src="deck.js"></script>
 </body>
